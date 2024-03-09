@@ -3,8 +3,8 @@
 #include "sort.h"
 /**
  * bubble_sort - function that sorts an array of integers in ascending order using the Bubble sort algorithm
- * @a :first input
- * @b :secand input
+ * @array :array
+ * @size :size of array
  * Return: always 0
  */
 
@@ -18,7 +18,7 @@ void bubble_sort(int *array, size_t size)
 			{
 				array[j] = array[j + 1];
 				array[j + 1] = temp;
-				or (size_t k = 0; k < size; k++) 
+				for (size_t k = 0; k < size; k++) 
 				{
 					printf("%d ", array[k]
 				}
