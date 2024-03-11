@@ -1,15 +1,15 @@
 #include "sort.h"
-
 /**
  *insertion_sort_list - Sorts a doubly linked list of integers
- * in ascending order using Insertion sort
- *@list: Pointer to the head of the doubly linked list
+ * @list: The list to be printed
  */
 void insertion_sort_list(listint_t **list)
 {
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 		return;
-	listint_t *current = (*list)->next;
+	listint_t *current;
+
+	current = (*list)->next;
 
 	while (current != NULL)
 	{
